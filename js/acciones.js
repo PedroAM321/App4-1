@@ -9,21 +9,21 @@ $(document).ready(function(e) {
 		$('#disp table td').eq(11).text(device.uuid);
 	document.addEventListener("pause",function(){
 		escribehistoria ('La app se pausó');
-	},false;//pause
+	},false);//pause
 	document.addEventListener("resume",function(){
 		escribehistoria ('La app se reinició');
-	},false;//resume
+	},false);//resume
 	document.addEventListener("online",function(){
 		escribehistoria ('La app se conectó de la red');
-	},false;//Se conectó
+	},false);//Se conectó
 	document.addEventListener("offline",function(){
 		escribehistoria ('La app se desconectó de la red');
-	},false;//Se desconectó
+	},false);//Se desconectó
 	
-	},false;//Ready device
+	},false);//Ready device
 	
 });//document
 
  function escribehistoria(accion){
-	  $('#eHistoria').append('<li>'+accion+'</li>);
+	  $('#eHistoria').append('<li>'+accion+'</li>');
  }
